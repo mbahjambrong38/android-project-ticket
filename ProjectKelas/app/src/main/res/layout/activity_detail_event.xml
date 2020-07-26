@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#049E08"
+    tools:context=".DetailEventActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="20dp"
+        android:background="@drawable/rounded_list_view">
+
+        <ImageView
+            android:id="@+id/img_detail_event"
+            android:layout_marginTop="20dp"
+            android:layout_width="300dp"
+            android:layout_height="180dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/rounded_image_detail_event"/>
+
+        <TextView
+            android:id="@+id/txt_judul_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:layout_marginLeft="32dp"
+            android:textSize="25sp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:text="Judul Event"/>
+
+        <TextView
+            android:id="@+id/txt_date_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="32dp"
+            android:textSize="25sp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:text="Date : xx / xx / xxxx"/>
+
+        <TextView
+            android:id="@+id/txt_time_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="32dp"
+            android:textSize="25sp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:text="Time : 10:00"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="32dp"
+            android:textSize="25sp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:text="Deskripsi Event : "/>
+
+        <TextView
+            android:id="@+id/txt_deskripsi_event_detail"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:textSize="15sp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:background="#FFFFFF"
+            android:text="Deskripsi Event : "/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="32dp"
+            android:textSize="25sp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:text="Buy : "/>
+
+        <LinearLayout
+            android:layout_marginTop="11dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <Button
+                android:id="@+id/btn_VIP_detail"
+                android:layout_width="90dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="32dp"
+                android:text="VIP"/>
+
+
+            <Button
+                android:id="@+id/btn_REGULER_detail"
+                android:layout_width="90dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:text="REGULER"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

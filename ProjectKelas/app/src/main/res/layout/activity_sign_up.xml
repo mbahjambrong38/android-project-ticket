@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUp"
+    android:background="#049E08">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_up"
+        android:layout_marginTop="40dp"
+        android:textSize="40sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="100dp">
+
+            <EditText
+                android:id="@+id/edt_firstName_signUp"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@drawable/rounded_edit_text"
+                android:layout_marginRight="6dp"
+                android:textSize="16sp"
+                android:layout_weight="1"
+                android:hint="@string/first_name"/>
+
+            <EditText
+                android:id="@+id/edt_lastName_signUp"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@drawable/rounded_edit_text"
+                android:layout_marginLeft="6dp"
+                android:textSize="16sp"
+                android:layout_weight="1"
+                android:hint="@string/last_name"/>
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/edt_email_signUp"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/rounded_edit_text"
+            android:layout_marginTop="10dp"
+            android:textSize="16sp"
+            android:inputType="textEmailAddress"
+            android:hint="@string/email"/>
+
+        <EditText
+            android:id="@+id/edt_password_signUp"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/rounded_edit_text"
+            android:layout_marginTop="10dp"
+            android:textSize="16sp"
+            android:inputType="textPassword"
+            android:hint="@string/passowrd"/>
+
+        <EditText
+            android:id="@+id/edt_phone_signUp"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/rounded_edit_text"
+            android:layout_marginTop="10dp"
+            android:textSize="16sp"
+            android:inputType="phone"
+            android:hint="@string/mobile_number"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Birthday"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="15dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/listDate"
+                android:layout_marginTop="4dp"
+                android:layout_marginRight="8dp">
+
+            </Spinner>
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/listMonth"
+                android:layout_marginTop="4dp"
+                android:layout_marginRight="8dp">
+
+            </Spinner>
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/listYear"
+                android:layout_marginTop="4dp">
+
+            </Spinner>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gender"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="15dp"
+            />
+
+       <RadioGroup
+           android:id="@+id/radio_group_gender"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content">
+
+               <RadioButton
+                   android:id="@+id/rd_feMale_signUp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:checked="true"
+                   android:text="Female"/>
+
+               <RadioButton
+                   android:id="@+id/rd_male_signUp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Male"/>
+
+       </RadioGroup>
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_login_login"
+        android:layout_width="170dp"
+        android:layout_height="40dp"
+        android:text="@string/login"
+        android:background="@drawable/rounded_button"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:textSize="18sp"
+        android:enabled="false"/>
+
+
+
+</LinearLayout>

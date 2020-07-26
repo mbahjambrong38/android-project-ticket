@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#049E08"
+    tools:context=".TypeEventActivity">
+
+    <TextView
+        android:id="@+id/txt_type_event"
+        android:layout_marginTop="27dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="35sp"
+        android:text="TYPE EVENTS"
+        android:textStyle="bold"
+        android:textColor="#FFEB3B"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginBottom="90dp"
+        android:background="#D7D7D7">
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"
+                android:textSize="23sp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:text="Banyak Tiket : "/>
+
+            <Spinner
+                android:id="@+id/list_tiket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:layout_marginLeft="15dp"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="7dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:textSize="23sp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:text="Date : "/>
+
+
+            <TextView
+                android:id="@+id/txt_date_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:textSize="23sp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:text="xx / xx / xxxxx"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="7dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:textSize="23sp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:text="Time : "/>
+
+
+            <TextView
+                android:id="@+id/txt_time_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:textSize="23sp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:text="00.00"/>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="7dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:textSize="23sp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:text="Deskripsi "/>
+
+
+            <TextView
+                android:id="@+id/txt_type_event1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:textSize="23sp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:text="TYPE"/>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_deskripsi_type"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:textSize="17sp"
+            android:text="INI DESKRIPSI"
+            android:background="#ffffff"/>
+
+        <Button
+            android:id="@+id/btn_pay"
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="PAY"
+            android:background="#FFEB3B"
+            android:layout_gravity="center"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>
